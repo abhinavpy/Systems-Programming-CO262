@@ -1,0 +1,64 @@
+$date
+	Sat Jan  5 11:00:55 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module dm_tb $end
+$var wire 64 ! read_data [63:0] $end
+$var reg 7 " address [6:0] $end
+$var reg 1 # mem_read $end
+$var reg 1 $ mem_write $end
+$var reg 64 % write_data [63:0] $end
+$scope module A $end
+$var wire 7 & address [6:0] $end
+$var wire 1 # mem_read $end
+$var wire 1 $ mem_write $end
+$var wire 64 ' write_data [63:0] $end
+$var reg 64 ( read_data [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+b1111 '
+b1 &
+b1111 %
+1$
+0#
+b1 "
+bx !
+$end
+#5
+b1111 !
+b1111 (
+0$
+1#
+#10
+1$
+0#
+b10100010 %
+b10100010 '
+b10 "
+b10 &
+#15
+b10100010 !
+b10100010 (
+0$
+1#
+#20
+1$
+0#
+b10100001101100110100 %
+b10100001101100110100 '
+b1010 "
+b1010 &
+#25
+b10100001101100110100 !
+b10100001101100110100 (
+0$
+1#

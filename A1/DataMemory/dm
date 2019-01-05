@@ -1,0 +1,40 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_010F2BB0 .scope module, "dm" "dm" 2 1;
+ .timescale 0 0;
+v010F3D10_0 .net "address", 6 0, C4<zzzzzzz>; 0 drivers
+v010F3D68 .array "mem", 127 0, 63 0;
+v010F3DC0_0 .net "mem_read", 0 0, C4<z>; 0 drivers
+v010F3E18_0 .net "mem_write", 0 0, C4<z>; 0 drivers
+v010F3E70_0 .var "read_data", 63 0;
+v010F3EC8_0 .net "write_data", 63 0, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; 0 drivers
+    .scope S_010F2BB0;
+T_0 ;
+    %load/v 8, v010F3DC0_0, 1;
+    %jmp/0xz  T_0.0, 8;
+    %ix/getv 3, v010F3D10_0;
+    %load/av 8, v010F3D68, 64;
+    %ix/load 0, 64, 0;
+    %assign/v0 v010F3E70_0, 0, 8;
+T_0.0 ;
+    %load/v 8, v010F3E18_0, 1;
+    %jmp/0xz  T_0.2, 8;
+    %load/v 8, v010F3EC8_0, 64;
+    %ix/getv 3, v010F3D10_0;
+    %jmp/1 t_0, 4;
+    %ix/load 0, 64, 0; word width
+    %ix/load 1, 0, 0; part off
+    %assign/av v010F3D68, 0, 8;
+t_0 ;
+T_0.2 ;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "dm.v";
