@@ -1,8 +1,3 @@
-/*************************************************
-* 4X16 decoder
-* Shanthanu S Rai(17CO242) and Varun Pattar(17CO249)
-* October 13, 2018
-*************************************************/
 
 //design for 5X32 decoder
 module decoder(I, enable, O);

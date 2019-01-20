@@ -1,6 +1,4 @@
 /*********************************
-* Shanthanu S Rai (171CO242)
-* Varun V Pattar (171CO249)
 * Immediate generation block
 *********************************/
 

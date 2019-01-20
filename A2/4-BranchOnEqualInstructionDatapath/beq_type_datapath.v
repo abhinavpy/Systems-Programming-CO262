@@ -1,6 +1,4 @@
 /****************************
-* Shanthanu S Rai (171CO242)
-* Varun V Pattar (171CO249)
 * BEQ-Type Datapath
 * Jan 11, 2019
 ****************************/

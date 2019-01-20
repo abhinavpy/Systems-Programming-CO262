@@ -1,6 +1,4 @@
 /*********************************
-* Shanthanu S Rai (17CO242)
-* Varun V Pattar (171CO249)
 * Implementation of combinational 
 * memory block
 *********************************/

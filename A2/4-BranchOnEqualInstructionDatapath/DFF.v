@@ -1,6 +1,5 @@
 /*************************************************
 * Behavioral code for D Flip Flop(with reset)
-* Shanthanu S Rai(17CO242) and Varun Pattar(17CO249)
 * October 14, 2018
 *************************************************/
 

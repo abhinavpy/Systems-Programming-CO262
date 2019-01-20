@@ -1,8 +1,3 @@
-/*****************************************************
-* ALU Control
-* Shanthanu S Rai(17CO242) and Varun Pattar(17CO249)
-* October 23, 2018
-******************************************************/
 
 module ALUcontrol(
 input ALUOp1, ALUOp0,

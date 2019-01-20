@@ -1,8 +1,4 @@
-/*****************************************************
-* 1 bit ALU
-* Shanthanu S Rai(17CO242) and Varun Pattar(17CO249)
-* October 21, 2018
-******************************************************/
+
 
 `include "full_adder.v"
 `include "mux_2X1.v"
